@@ -1,23 +1,73 @@
-#
+# Your First CI Pipeline
 
 ## References
 
-## 1 - guided
+## Run the integration steps manually
 
-## 2 - continuation
+git checkout main
 
-📋 Task
+cd app
 
-<details>
-  <summary>Not sure how?</summary>
+./build.ps1
 
-...
+./run.ps1
 
-</details><br/>
 
-## 3 - continuation
+## Rishi's bugfix
 
-## 4 - lab
+Create a new branch & make Rishi's change
+
+git checkout -b rishi/bugfix-2
+
+#TODO - UTF issue; mv?
+cat hello-world-rishi.ps1 > hello-world.ps1
+
+./build.ps1
+
+./run.ps1
+
+git commit -m "Rishi's bugfix"
+
+git checkout main
+
+git merge rishi/bugfix-2
+
+git push
+
+## Katherine's new feature
+
+
+git checkout -b katherine/feature-2
+
+#TODO - UTF issue; mv?
+cat hello-world-katherine.ps1 > hello-world.ps1
+
+./build.ps1
+
+./run.ps1
+
+git commit -m "Kat's new feature"
+
+git push
+
+> Fails "need to pull first"
+
+git pull
+
+> Now the merge conflict is the developer's problem :)
+
+## Lab
+
+What have we changed?
+
+- dev responsibility to merge
+- git enforces conflict mgmt
+
+Have we fixed the problem?
+
+- yes - reduced timeframe to find issue
+- dev hits roadblock  encourages merge soon & often
+- main branch is always releasable
 
 > Stuck? Try [hints](hints.md) or check the [solution](solution.md).
 

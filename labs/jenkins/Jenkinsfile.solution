@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                sh '''
+                    chmod +x ./src/hello-world/build.ps1
+                    ./src/hello-world/build.ps1
+                '''
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                sh '''
+                    chmod +x ./src/hello-world/run.ps1
+                    ./src/hello-world/run.ps1
+                '''
+            }
+        }
+    }
+}

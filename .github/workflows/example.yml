@@ -1,0 +1,14 @@
+name: Example workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Audit tools
+        run: |
+          git version
+          docker version
+          docker-compose version
+

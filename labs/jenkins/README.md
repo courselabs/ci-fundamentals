@@ -2,9 +2,30 @@
 
 ## References
 
-## 1 - guided
+- Jenkinsfile syntax
+- Simple Jenkinsfile example
+- diamol.net
 
-## 2 - continuation
+## Run Jenkins in Docker
+
+docker-compose -f ./labs/jenkins/docker-compose.yml up -d
+
+docker ps
+
+docker logs jenkins_jenkins_1
+
+
+http://localhost:8080
+
+login `cifun`
+
+
+
+## Create the Jenkins build
+
+- pipeline build
+- github repo
+- polling trigger
 
 📋 Task
 
@@ -15,7 +36,13 @@
 
 </details><br/>
 
-## 3 - continuation
+## Model the build workflow
+
+Copy Jenkinsfile.template to Jenkinsfile
+
+Fill in the blanks :)
+
+Jenkinsfile.solution if you need help
 
 ## 4 - lab
 

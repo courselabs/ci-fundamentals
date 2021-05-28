@@ -2,20 +2,47 @@
 
 ## References
 
-## 1 - guided
+- gha syntax
+- gha triggers
+- software on GHA runners
+- sample gha workflow
 
-## 2 - continuation
+## Simple on-demand workflow
 
-📋 Task
+- workflow with echo & docker version
 
-<details>
-  <summary>Not sure how?</summary>
+YAML
+GHA link
+run workflow
+watch output
 
-...
+## Model the build workflow
 
-</details><br/>
+- copy simple & run build & run scripts in steps
 
-## 3 - continuation
+> Trigger build manually
+
+
+
+## Test the integration
+
+- add trigger on:push
+- limit to main branch
+
+git checkout katherine/feature-2
+
+fix conflict - accept changes
+
+git commit
+
+git checkout main
+
+git merge katherine/feature-2
+
+git push
+
+> OPen and watch the build
+
 
 ## 4 - lab
 
