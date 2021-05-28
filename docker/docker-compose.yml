@@ -1,0 +1,8 @@
+services:
+  jenkins:
+    image: cifun/jenkins:2.277.4
+    build:
+      context: jenkins
+      args:
+        BUILD_TAG: ${GITHUB_WORKFLOW:-local}-${BUILD_NUMBER:-0}-${GITHUB_REF:-local}
+        COMMIT_SHA: ${GITHUB_SHA:-local}
