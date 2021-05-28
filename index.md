@@ -42,7 +42,7 @@ These are hands-on resources to help you learn Continuous Integration (CI) and C
 
 - [Static code analysis]()
 - [System tests with mocks]()
-- [End-to-end tests with Cucumber]()
+- [Functional tests with Cucumber]()
 - [Pull requests and code reviews]()
 
 ## Part 5 - Best Practices for CI/CD
@@ -50,11 +50,12 @@ These are hands-on resources to help you learn Continuous Integration (CI) and C
 - [Software Bill of Materials (SBOM)]()
 - [Configuration and secret management]()
 - [Fast feedback and rollback]()
-- [Production monitoring]()
+- [Monitoring dashboards]()
 
 ## Part 6 - Real-World Pipelines
 
-- [Blue/green and canaries]()
+- [Blue/green deployments]()
+- [Canary rollouts]()
 - [Feature management]()
 - [Hackathon!]()
 
